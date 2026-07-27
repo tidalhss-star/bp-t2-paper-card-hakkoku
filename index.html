@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <title>카드 혜택 구조 — 복잡한 약관 속에서 놓치기 쉬운 조건 판별법</title>
+    <meta name="description" content="다양한 업종과 서비스 이용 시 카드 혜택이 적용되는 구조적 원리를 분석합니다. 약관의 행간을 읽고 스스로 판단하는 기준을 제시하는 정보성 블로그입니다.">
+    <meta name="keywords" content="카드 혜택 구조, 이용 가이드, 결제 조건 분석, 소비 정보, 서비스 비교">
+    <link rel="canonical" href="https://paper.card-hakkoku.store/">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "카드 혜택이 적용되지 않는 경우는 주로 어떤 때인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "주로 가맹점 업종 코드가 카드사의 혜택 범위에서 제외되어 있거나, 전월 실적 산정 시 해당 결제 건이 제외되는 경우입니다. 결제 전 가맹점의 사업자 등록 업종을 확인하는 것이 가장 정확합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "비즈니스클럽이나 가라오케 이용 시 혜택 확인은 어떻게 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업소의 실제 서비스 명칭과 카드 단말기에 등록된 업종 코드가 다를 수 있습니다. 일반 음식점으로 등록된 경우 일반 카드 혜택이 적용되지만, 유흥업종으로 분류된 경우 혜택이 제한될 가능성이 높습니다."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --k-card-uzpd: #fdfaf3;
+            --v-side-w6h2: #2c2416;
+            --k-side-cwlv: #8a7355;
+        }
+        body { margin: 0; font-family: 'Georgia', serif; background: var(--k-card-uzpd); color: var(--v-side-w6h2); line-height: 1.6; }
+        .x-body-vr43 { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        header { padding: 60px 0; border-bottom: 1px solid #e0dcd5; text-align: center; }
+        nav { display: flex; justify-content: center; gap: 40px; padding: 20px 0; border-bottom: 1px solid #e0dcd5; }
+        .x-item-s4vd { padding: 120px 0; text-align: center; }
+        .x-item-s4vd h1 { font-size: 3rem; margin-bottom: 20px; letter-spacing: -1px; }
+        .r-item-vlgb { display: flex; gap: 40px; margin-top: 60px; }
+        .r-side-mvsq { flex: 2; }
+        .m-head-lrdj { flex: 1; border-left: 1px solid #e0dcd5; padding-left: 40px; }
+        section { padding: 60px 0; }
+        .t-foot-h05r { border: 1px solid #dcd8d0; padding: 24px; margin-bottom: 24px; }
+        .t-top-63q8 { display: inline-block; padding: 12px 24px; border: 1px solid #2c2416; text-decoration: none; color: #2c2416; font-size: 0.9rem; margin-top: 20px; }
+        footer { padding: 80px 0; text-align: center; font-size: 0.8rem; border-top: 1px solid #e0dcd5; }
+        @media (max-width: 768px) { .r-item-vlgb { flex-direction: column; } }
+    </style>
+  <meta property="og:url" content="https://paper.card-hakkoku.store/">
+</head>
+<body>
+
+<header>
+    <div class="x-body-vr43">
+        <h1>카드 혜택 구조</h1>
+        <p>복잡한 약관의 행간을 읽는 정보 분석 아카이브</p>
+    </div>
+</header>
+
+<nav>
+    <a href="/">홈</a>
+    <a href="#">분석 리포트</a>
+    <a href="#">업종별 가이드</a>
+    <a href="#">문의</a>
+</nav>
+
+<main class="x-body-vr43">
+    <section id="hero" class="x-item-s4vd">
+        <span aria-hidden="true" data-t="A1B2C3D4">●</span>
+        <h2 style="font-style: italic;">"같은 결제, 다른 결과"</h2>
+        <p>왜 어떤 결제는 혜택을 받고, 어떤 결제는 제외되는가? 구조를 알면 보입니다.</p>
+    </section>
+
+    <div class="r-item-vlgb">
+        <div class="r-side-mvsq">
+            <section id="content">
+                <h3>가맹점 코드의 함정</h3>
+                <p>많은 사용자들이 겪는 오류는 업소의 상호명만 보고 혜택을 예측하는 것입니다. 카드사의 혜택은 실제 상호가 아닌, 카드 단말기에 등록된 <strong>업종 코드</strong>에 의해 결정됩니다. <span aria-hidden="true" data-t="F5E6D7C8">~</span></p>
+                <p>예를 들어, 노래방이나 펍이 실제로는 '일반음식점'으로 등록되어 있을 때와 '유흥주점'으로 분류되어 있을 때의 카드 혜택은 극명하게 갈립니다. 이는 서비스의 질을 떠나 카드사의 전산 정책에 따른 물리적 구분입니다.</p>
+            </section>
+        </div>
+
+        <aside class="m-head-lrdj">
+            <div class="t-foot-h05r">
+                <h4>필독 가이드</h4>
+                <ul>
+                    <li>업종 코드 확인법</li>
+                    <li>전월 실적 산정 기준</li>
+                    <li>제외 항목 리스트</li>
+                </ul>
+            </div>
+            <span aria-hidden="true" data-t="99A8B7C6">·</span>
+        </aside>
+    </div>
+
+    <section id="faq">
+        <h3>자주 묻는 질문</h3>
+        <div class="t-foot-h05r">
+            <p><strong>Q: 카드 혜택이 적용되지 않는 경우는 주로 어떤 때인가요?</strong><br>
+            A: 주로 가맹점 업종 코드가 카드사의 혜택 범위에서 제외되어 있거나, 전월 실적 산정 시 해당 결제 건이 제외되는 경우입니다. 결제 전 가맹점의 사업자 등록 업종을 확인하는 것이 가장 정확합니다.</p>
+        </div>
+        <div class="t-foot-h05r">
+            <p><strong>Q: 비즈니스클럽이나 가라오케 이용 시 혜택 확인은 어떻게 하나요?</strong><br>
+            A: 업소의 실제 서비스 명칭과 카드 단말기에 등록된 업종 코드가 다를 수 있습니다. 일반 음식점으로 등록된 경우 일반 카드 혜택이 적용되지만, 유흥업종으로 분류된 경우 혜택이 제한될 가능성이 높습니다.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="x-body-vr43">
+        <div class="bio">
+            <p><strong>작성자: 현명한 소비 기록가</strong></p>
+            <p>다양한 업종의 결제 구조와 카드 혜택을 5년간 분석해온 독립 연구자입니다.</p>
+        </div>
+        <p>&copy; 2024 카드 혜택 구조 연구소. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

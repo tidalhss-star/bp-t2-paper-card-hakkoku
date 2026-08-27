@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
+  <title>t2-paper-card-hakkoku</title>
+  <rect width="64" height="64" rx="12" fill="hsl(139 53% 26%)"/>
+  <g transform="rotate(180 32 32)"><path d="M44 20a17 17 0 1 0 6 14" fill="none" stroke="hsl(139 24% 96%)" stroke-width="7" stroke-linecap="round"/><circle cx="44" cy="20" r="5" fill="hsl(198 68% 61%)"/></g>
+</svg>
